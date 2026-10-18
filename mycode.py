@@ -14,6 +14,10 @@ df = pd.DataFrame(data)
 new_row = pd.DataFrame({'Name': ['Eve'], 'Age': [28], 'City': ['Phoenix']})
 df = pd.concat([df, new_row], ignore_index=True)
 
+#Adding a new row for version3 
+new_row = pd.DataFrame({'Name': ['July'], 'Age': [24], 'City': ['Mexico City']})
+df = pd.concat([df, new_row], ignore_index=True)
+
 # Save the DataFrame to a CSV file
 data_dir = 'data'
 os.makedirs(data_dir, exist_ok=True)
