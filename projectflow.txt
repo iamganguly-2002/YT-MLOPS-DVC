@@ -8,4 +8,5 @@
 8. Now "dvc add data/" (if you want to version any specific file under data folder do data/<filer name>)
        Now it will ask to do :("git rm -r --cached 'data'" and "git commit -m 'stop tracking data'")
        Because initially we track data/ folder from git so now we remove it for DVC to handle this . 
-9. Again we do "dvc add data/" and then we do "git add .gitignore data.dvc"       
+9. Again we do "dvc add data/" and then we do "git add .gitignore data.dvc"   
+10. Do "dvc commit" and "dvc push"    
