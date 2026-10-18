@@ -9,4 +9,6 @@
        Now it will ask to do :("git rm -r --cached 'data'" and "git commit -m 'stop tracking data'")
        Because initially we track data/ folder from git so now we remove it for DVC to handle this . 
 9. Again we do "dvc add data/" and then we do "git add .gitignore data.dvc"   
-10. Do "dvc commit" and "dvc push"    
+10. Do "dvc commit" and "dvc push"  
+11. Now make changes to mycode.py to append a new row in data check changes via "dvc status"
+12 . Again do  "dvc commit" and "dvc push" 

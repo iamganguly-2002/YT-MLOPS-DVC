@@ -10,6 +10,10 @@ data = {
 
 df = pd.DataFrame(data)
 
+#Adding a new row for version2 
+new_row = pd.DataFrame({'Name': ['Eve'], 'Age': [28], 'City': ['Phoenix']})
+df = pd.concat([df, new_row], ignore_index=True)
+
 # Save the DataFrame to a CSV file
 data_dir = 'data'
 os.makedirs(data_dir, exist_ok=True)
